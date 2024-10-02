@@ -1,21 +1,21 @@
-import { isPalindrome } from "./palindrome";
+import { IsPalindrome } from "./palindrome";
 
 test("testIsPalindrome_EmptyString", () => {
-  const result = isPalindrome("");
+  const result = IsPalindrome("");
   expect(result).toBe(true);
 });
 
 test("testIsPalindrome_SingleCharacterPalindrome", () => {
-  const result = isPalindrome("a");
+  const result = IsPalindrome("a");
   expect(result).toBe(true);
 });
 
 test("testIsPalindrome_PalindromeString", () => {
-  const result = isPalindrome("radar");
+  const result = IsPalindrome("radar");
   expect(result).toBe(true);
 });
 
 test("testIsPalindrome_NonPalindromeString", () => {
-  const result = isPalindrome("hello");
+  const result = IsPalindrome("hello");
   expect(result).toBe(false);
 });
